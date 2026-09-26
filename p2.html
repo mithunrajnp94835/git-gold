@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 
+        {
+            margin: 0;
+        }
+        h4 
+        {
+            margin: 0;
+        }
+        p
+        {
+            margin: 0;
+        }
+
+        table, th, td 
+        {
+          border: 5px double black;
+          border-collapse: collapse;
+        }
+        table 
+        {
+            margin: 0 auto;
+        }
+        th, td 
+        {
+          padding: 8px;
+        }
+
+        .three-values 
+        {
+            padding: 0;
+        }
+        .three-values div 
+        {
+            padding: 1px;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        .three-values div:last-child 
+        {
+            border-bottom: none;
+        }
+
+        .cell-row 
+        {
+            min-height: 18px;
+        }
+
+        .profile 
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile img 
+        {
+    width: 120px;
+    height: 80px;
+        }
+
+        .info 
+        {
+            margin-left: 20px;
+        }
+/* colours classes:  */
+        .cns 
+            {
+                background-color: rgb(255, 141, 141);
+            }
+        .toc 
+            {
+                background-color: rgb(137, 200, 70);
+            }
+        .ai 
+            {
+                background-color: rgb(229, 62, 184);
+            }
+        .se 
+            {
+                background-color: rgb(107, 194, 249);
+            }
+        .rm 
+            {
+                background-color: rgb(91, 100, 238);
+            }
+        .evs 
+            {
+                background-color: rgb(96, 158, 86);
+            }
+        
+        .lab 
+            {
+                background-color: rgb(236, 224, 57);
+            }
+        
+        /* colour effects*/
+        .cns,
+        .toc,
+        .ai,
+        .se,
+        .rm,
+        .lab,
+        .evs
+        {
+            transition: 10s;
+        }
+
+        .cns:hover,
+        .toc:hover,
+        .ai:hover, 
+        .se:hover,
+        .rm:hover,
+        .lab:hover,
+        .evs:hover
+        {
+            opacity: 0;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="profile">
+        <img src="https://img.studyclap.com/img/institute/logo/f319fe1809-bit-bangalore.png" alt="BIT">
+
+        <div class="info">
+            <center>
+                <h2>BANGALORE INSTITUTE OF TECHNOLOGY</h2>
+                <h4>DEPARTMENT CSE</h4>
+                <p>TIME TABLE FOR THE YEAR - Sep 2026 to Dec 2026</p>
+                <p>V sem B section</p>
+            </center>
+        </div>
+    </div>
+
+    <table>
+<!--HEADER-->
+        <tr>  
+            <th></th> 
+
+            <th>8:00-9:00</th>
+            <th>9:00-10:00</th> 
+            
+            <th>10:00-10:30</th>
+            
+            <th>10:30-11:30</th>
+            <th>11:30-12:30</th>
+
+            <th>12:30-1:30</th>
+            
+            <th>1:30-2:30</th>
+            <th>2:30-3:30</th>
+            <th>3:30-4:30</th>
+            <th>4:30-5:30</th>
+        </tr>  
+<!--MONDAY-->
+        <tr>  
+            <td class="names">Monday</td> 
+
+            <td class="three-values cns" >
+                <div class="cell-row">CNS</div>
+                <div class="cell-row">KNP</div>
+                <div class="cell-row">523</div>
+            </td>
+            <td class="three-values toc">
+                <div class="cell-row">TOC</div>
+                <div class="cell-row">SHG</div>
+                <div class="cell-row">523</div>
+            </td> 
+<!--TEA BREAK-->
+            <td rowspan="7">TEA BREAK</td>
+
+            <td class="three-values ai">
+                <div class="cell-row">AI</div>
+                <div class="cell-row">MJ</div>
+                <div class="cell-row">523</div>
+            </td>
+            <td class="three-values se">
+                <div class="cell-row">SE</div>
+                <div class="cell-row">MH</div>
+                <div class="cell-row">523</div>
+            </td>
+
+            <td class="three-values rm">
+                <div class="cell-row">RM</div>
+                <div class="cell-row"></div>
+                <div class="cell-row">523</div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+        </tr>
+<!--TUESDAY-->
+        <tr>  
+            <td>Tuesday</td> 
+
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td> 
+
+<!--TEABREAK-->
+
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+
+            <td class="three-values ai">
+                <div class="cell-row">AI</div>
+                <div class="cell-row">MJ</div>
+                <div class="cell-row">523</div>
+            </td>
+            <td class="three-values se">
+                <div class="cell-row">SE</div>
+                <div class="cell-row">MH</div>
+                <div class="cell-row">523</div>
+            </td>
+            <td class="three-values toc">
+                <div class="cell-row">TOC</div>
+                <div class="cell-row">SHG</div>
+                <div class="cell-row">523</div>
+            </td>
+            <td class="three-values cns">
+                <div class="cell-row">CNS</div>
+                <div class="cell-row">KNP</div>
+                <div class="cell-row">523</div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+        </tr>
+<!--WEDNSDAY-->
+        <tr>  
+            <td>Wednsday</td> 
+
+            <td class="three-values rm">
+                <div class="cell-row">RM</div>
+                <div class="cell-row"></div>
+                <div class="cell-row">523</div>
+            </td> 
+            <td class="three-values se">
+                <div class="cell-row">SE</div>
+                <div class="cell-row">MH</div>
+                <div class="cell-row">523</div>
+            </td>
+
+<!--TEABREAK-->
+
+            <td class="three-values toc">
+                <div class="cell-row">TOC</div>
+                <div class="cell-row">SHG</div>
+                <div class="cell-row">523</div>
+            </td>
+            <td class="three-values ai">
+                <div class="cell-row">AI</div>
+                <div class="cell-row">MJ</div>
+                <div class="cell-row">523</div>
+            </td>\
+
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td colspan="2" class="three-values lab">
+                <div class="cell-row">WT Lab / CNS Lab</div>
+                <div class="cell-row">B1+B2 / B3+B4</div>
+                <div class="cell-row">503 / 527A</div>
+            </td>
+
+
+
+
+
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td> 
+        </tr>
+<!--THURSDAY-->
+        <tr>  
+            <td>Thursday</td> 
+
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td> 
+
+<!--TEABREAK-->
+
+            <td class="three-values evs">
+                <div class="cell-row">Online</div>
+                <div class="cell-row">EVS</div>
+                <div class="cell-row">KRS</div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+        </tr>
+<!--FRIDAY-->
+        <tr>  
+            <td>Friday</td>
+            
+            <td colspan="2" class="three-values lab">
+                <div class="cell-row">WT Lab / CNS Lab</div>
+                <div class="cell-row">B3+B4 / B1+B2</div>
+                <div class="cell-row">503 / 527A</div>
+            </td>
+            
+            
+
+
+
+
+<!--TEABREAK-->
+
+            <td class="three-values toc">
+                <div class="cell-row">TOC</div>
+                <div class="cell-row">SHG</div>
+                <div class="cell-row">527C</div>
+            </td>
+            <td class="three-values cns">
+                <div class="cell-row">CNS</div>
+                <div class="cell-row">KNP</div>
+                <div class="cell-row">527C</div>
+            </td>
+
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values rm">
+                <div class="cell-row">RM</div>
+                <div class="cell-row"></div>
+                <div class="cell-row">527C</div>
+            </td>
+            <td class="three-values se">
+                <div class="cell-row">SE</div>
+                <div class="cell-row">MH</div>
+                <div class="cell-row">527C</div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+        </tr>
+<!--SATURDAY-->
+        <tr>  
+            <td>Satuarday</td> 
+
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td> 
+
+<!--TEABREAK-->
+
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+            <td class="three-values">
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+                <div class="cell-row"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
