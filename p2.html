@@ -3,99 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        h2 
-        {
-            margin: 0;
-        }
-        h4 
-        {
-            margin: 0;
-        }
-        p
-        {
-            margin: 0;
-        }
-/* class to create tables*/
-        table, th, td 
-        {
-          border: 5px double black; /* double line and space btw lines is 5 pixels and black colour*/
-          border-collapse: collapse;
-        }
-        table 
-        {
-            margin: 0 auto;
-        }
-        th, td 
-        {
-          padding: 8px;
-        }
-/*class to add 3 lines in the cell to enter period details*/
-        .three-values 
-        {
-            padding: 0;
-        }
-        .three-values div 
-        {
-            padding: 1px;
-            text-align: center;
-            border-bottom: 1px solid black;
-        }
-        .three-values div:last-child 
-        {
-            border-bottom: none;
-        }
-
-        .cell-row 
-        {
-            min-height: 18px;
-        }
-/* these classes is to add image at left and information at right*/
-        .profile 
-        {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .profile img 
-        {
-    width: 120px;
-    height: 80px;
-        }
-
-        .info 
-        {
-            margin-left: 20px;
-        }
-/* colours classes:  */
-        .coll
-            {
-                background-color: #b1d6f1e5;
-            }
-        .normal 
-            {
-                background-color: rgb(72, 75, 221);
-            }
-        .mini
-            {
-                background-color: rgba(249, 100, 134, 0.574);
-            }
-        
-        .labs 
-            {
-                background-color: rgba(235, 109, 221, 0.581);
-            }
-/*text volours*/
-        .read-text
-        {
-            color:rgb(255, 5, 5);
-        }
-        
-
-    </style>
+    <title>time table</title>
+    <link rel="stylesheet" href="tablestyle1.css">
 </head>
 <body>
     <p>
@@ -117,10 +26,9 @@
             </center>
         </div>
     </div>
-
     <table>
 <!--HEADER-->
-        <tr class="normal">  
+        <thead class="normal">  
             <th></th> 
 
             <th>8:00-9:00</th>
@@ -137,41 +45,41 @@
             <th>2:30-3:30</th>
             <th>3:30-4:30</th>
             <th>4:30-5:30</th>
-        </tr>  
+        </thead>  
 <!--MONDAY-->
-        <tr>  
-            <td  class="normal">Monday</td> 
+        <tr class="col1">  
+            <th>Monday</th> 
 
-            <td class="three-values coll" >
+            <td class="three-values" >
                 <div class="cell-row">CNS</div>
                 <div class="cell-row">KNP</div>
                 <div class="cell-row">523</div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values ">
                 <div class="cell-row">TOC</div>
                 <div class="cell-row">SHG</div>
                 <div class="cell-row">523</div>
             </td> 
 <!--TEA BREAK-->
-            <td rowspan="7" class="read-text">TEA BREAK</td>
+            <td rowspan="6" class="read-text break">TEA BREAK</td>
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">AI</div>
                 <div class="cell-row">MJ</div>
                 <div class="cell-row">523</div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">SE</div>
                 <div class="cell-row">MH</div>
                 <div class="cell-row">523</div>
             </td>
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">RM</div>
                 <div class="cell-row"></div>
                 <div class="cell-row">523</div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
@@ -181,22 +89,22 @@
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
         </tr>
 <!--TUESDAY-->
-        <tr>  
-            <td class="normal">Tuesday</td> 
+        <tr class="col2">  
+            <th>Tuesday</th> 
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
@@ -204,53 +112,53 @@
 
 <!--TEABREAK-->
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">AI</div>
                 <div class="cell-row">MJ</div>
                 <div class="cell-row">523</div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">SE</div>
                 <div class="cell-row">MH</div>
                 <div class="cell-row">523</div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">TOC</div>
                 <div class="cell-row">SHG</div>
                 <div class="cell-row">523</div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">CNS</div>
                 <div class="cell-row">KNP</div>
                 <div class="cell-row">523</div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
         </tr>
 <!--WEDNSDAY-->
-        <tr>  
-            <td class="normal">Wednsday</td> 
+        <tr class="col3">  
+            <th>Wednsday</th> 
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">RM</div>
                 <div class="cell-row"></div>
                 <div class="cell-row">523</div>
             </td> 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">SE</div>
                 <div class="cell-row">MH</div>
                 <div class="cell-row">523</div>
@@ -258,18 +166,18 @@
 
 <!--TEABREAK-->
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">TOC</div>
                 <div class="cell-row">SHG</div>
                 <div class="cell-row">523</div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">AI</div>
                 <div class="cell-row">MJ</div>
                 <div class="cell-row">523</div>
             </td>\
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
@@ -284,27 +192,27 @@
 
 
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td> 
         </tr>
 <!--THURSDAY-->
-        <tr>  
-            <td class="normal">Thursday</td> 
+        <tr class="col4">  
+            <th>Thursday</th> 
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
@@ -312,12 +220,12 @@
 
 <!--TEABREAK-->
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">Online</div>
                 <div class="cell-row">EVS</div>
                 <div class="cell-row">KRS</div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
@@ -328,25 +236,25 @@
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
         </tr>
 <!--FRIDAY-->
-        <tr>  
-            <td class="normal">Friday</td>
+        <tr class="col5">  
+            <th>Friday</th>
             
             <td colspan="2" class="three-values labs">
                 <div class="cell-row"><b>WT Lab / CNS Lab</b></div>
@@ -361,53 +269,53 @@
 
 <!--TEABREAK-->
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">TOC</div>
                 <div class="cell-row">SHG</div>
                 <div class="cell-row">527C</div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">CNS</div>
                 <div class="cell-row">KNP</div>
                 <div class="cell-row">527C</div>
             </td>
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">RM</div>
                 <div class="cell-row"></div>
                 <div class="cell-row">527C</div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row">SE</div>
                 <div class="cell-row">MH</div>
                 <div class="cell-row">527C</div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
         </tr>
 <!--SATURDAY-->
-        <tr>  
-            <td class="normal">Satuarday</td> 
+        <tr class="col6">  
+            <th>Satuarday</th> 
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
@@ -415,43 +323,61 @@
 
 <!--TEABREAK-->
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
 
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
-            <td class="three-values coll">
+            <td class="three-values">
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
                 <div class="cell-row"></div>
             </td>
         </tr>
+<!--foot:-->
+        <tfoot>  
+            <th></th>
+            <th></th>
+            <th></th>
+
+
+<!--TEABREAK-->
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            
+        </tfoot>
     </table>
 </body>
 </html>
