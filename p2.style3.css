@@ -1,0 +1,119 @@
+        h2 
+        {
+            margin: 0;
+        }
+        h4 
+        {
+            margin: 0;
+        }
+        p 
+        {
+            margin: 0;
+        }
+/* class to create tables*/
+        table, th, td 
+        {
+          border: 5px double black; /* double line and space btw lines is 5 pixels and black colour*/
+          border-collapse: collapse;
+        }
+        table
+        {
+          margin: 0 auto;
+          text-align:center;
+          background-color:rgb(255, 255, 255);
+          font-weight:normal;
+          color:rgb(0, 0, 0);
+          font-family:Arial;
+        }
+        th, td 
+        {
+          padding: 8px;
+        }
+        th
+        {
+            background-color:rgb(0, 21, 253);
+        }
+/*class to add 3 lines in the cell to enter period details*/
+        .three-values 
+        {
+            padding: 0;
+        }
+        .three-values div 
+        {
+            padding: 1px;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+        .three-values div:last-child 
+        {
+            border-bottom: none;
+        }
+        .cell-row 
+        {
+            min-height: 18px;
+        }
+/* these classes is to add image at left and information at right*/
+        .profile 
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile img 
+        {
+            width: 120px;
+            height: 80px;
+        }
+
+        .info 
+        {
+            margin-left: 20px;
+        }
+/* colours classes:  */
+        .col1
+            {
+                background-color:rgba(255, 0, 255, 0.459);
+            }
+        .col2
+            {
+                background-color:rgba(149, 0, 255, 0.695);
+            }
+        .col3
+            {
+                background-color:rgba(8, 185, 255, 0.475);
+            }
+        .col4
+            {
+                background-color:rgba(0, 255, 0, 0.453);
+            }
+        .col5
+            {
+                background-color:rgba(255, 166, 0, 0.541);
+            }
+        .col6
+            {
+                background-color:rgba(255, 0, 0, 0.681);
+            }
+
+        .break
+            {
+                background-color: rgb(255, 255, 255);
+            }
+
+        .mini
+            {
+                background-color: rgb(255, 255, 0);
+            }
+        
+        .labs 
+            {
+                background-color: rgb(255, 0, 191);
+            }
+/*text volours*/
+        .read-text
+        {
+            color:rgb(255, 5, 5);
+        }
+    
