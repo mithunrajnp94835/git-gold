@@ -1,0 +1,58 @@
+* 
+{
+    padding: 0;
+    margin: 0;
+    /*text-align: center;*/
+}
+.center
+{
+    text-align: center;
+}
+p.color 
+{
+  color: rgb(224, 240, 52);
+}
+p.color1 
+{
+  color: rgb(39, 214, 237);
+}
+p.highlight
+{
+    background-color: yellow;
+}
+div
+{
+    padding: 15px;
+  border: 3px solid rgb(0, 255, 76);
+  background-color: purple;
+  color:rgb(255, 0, 0);
+  height:35px;
+}
+
+h1 
+{
+  color: rgb(131, 247, 48);
+}
+h2 
+{
+  color: rgb(70, 248, 201);
+}
+hr
+{
+    color:rgb(17, 120, 72);
+    height:2px;
+    background-color:rgb(159, 72, 72);
+}
+
+/*selectors:*/
+#id1 {
+    font-size:1.2em;
+    color: red;
+    background-color:rgb(201, 184, 218);
+    padding:10px;
+    border-left:5px solid red;
+}
+
+.info1 {
+    color: blue; 
+}
